@@ -28,11 +28,11 @@ class Page1 extends StatelessWidget {
                   children: <Widget>[
                     Container(
                       alignment: Alignment.centerLeft,
-                      child: Text('STUDYING' ,style: TextStyle(fontSize: 18,color: Colors.grey[900]),),
-                      padding: EdgeInsets.only(left: 30),
+                      child: Text('STUDYING' ,style: TextStyle(fontSize: 22,color: Colors.grey[800],fontWeight: FontWeight.w800),),
+                      padding: EdgeInsets.only(left: 30,top: 45,bottom: 15),
                     ),
                     Container(
-                      height: (MediaQuery.of(context).size.height * 0.5) * 0.9,
+                      height: (MediaQuery.of(context).size.height * 0.5) * 0.765,
                       child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           shrinkWrap: true,

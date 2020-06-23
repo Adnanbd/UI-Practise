@@ -11,7 +11,7 @@ class Page1Header1 extends StatelessWidget {
                   Container(
                     child: Text(
                       'Hi, Antonio',
-                      style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold,color: Colors.grey[900]),
+                      style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,color: Colors.grey[900]),
                     ),
                     padding: EdgeInsets.all(10),
                   ),
@@ -19,7 +19,7 @@ class Page1Header1 extends StatelessWidget {
                     
                     child: Text(
                       'What would you like to learn',
-                      style: TextStyle(fontSize: 22,color: Colors.grey[700]),
+                      style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold,color: Colors.grey[700]),
                     ),
                   ),
                   Container(
@@ -27,11 +27,11 @@ class Page1Header1 extends StatelessWidget {
                    
                     child: Text(
                       'today? Search below.',
-                      style: TextStyle(fontSize: 22,color: Colors.grey[700]),
+                      style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold,color: Colors.grey[700]),
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(bottom: 20,left: 30,right: 30,top: 50),
+                    margin: EdgeInsets.only(bottom: 25,left: 30,right: 30,top: 55),
                     
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -45,7 +45,7 @@ class Page1Header1 extends StatelessWidget {
                         ),
                       ],
                     ),
-                    height: 72,
+                    height: 82,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[

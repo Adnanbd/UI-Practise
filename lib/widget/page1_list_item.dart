@@ -22,11 +22,11 @@ class Page1ListItem extends StatelessWidget {
           ),
         ],
       ),
-      width: MediaQuery.of(context).size.width * 0.75,
+      width: MediaQuery.of(context).size.width * 0.72,
       child: Column(
         children: <Widget>[
           Container(
-            height: ((MediaQuery.of(context).size.height * 0.5) * 0.9) * 0.4,
+            height: ((MediaQuery.of(context).size.height * 0.5) * 0.8) * 0.38,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(15),
@@ -37,7 +37,7 @@ class Page1ListItem extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.all(20),
-            height: ((MediaQuery.of(context).size.height * 0.5) * 0.9) * 0.5,
+            height: ((MediaQuery.of(context).size.height * 0.5) * 0.8) * 0.5,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -47,14 +47,21 @@ class Page1ListItem extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   child: Text(
                     subName + ' Basics',
-                    style: TextStyle(color: color),
+                    style: TextStyle(color: color,fontSize: 20,fontWeight: FontWeight.w800),
                   ),
                 ),
-                Container(
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                  
+                  
+
+                  Container(
                   child: Text(
                     subName + ' And the',
                     style: TextStyle(
-                      fontSize: 22,
+                      fontSize: 28,
+                      fontWeight: FontWeight.w800
                     ),
                   ),
                 ),
@@ -63,17 +70,21 @@ class Page1ListItem extends StatelessWidget {
                   child: Text(
                     'Scientefic Method',
                     style: TextStyle(
-                      fontSize: 23,
+                      fontSize: 28,
+                      fontWeight: FontWeight.w800
                     ),
                   ),
                 ),
+
+                ],),
+                
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Container(
                       child: Text(
                         '4 of 8 Lessons',
-                        style: TextStyle(fontSize: 15, color: Colors.grey),
+                        style: TextStyle(fontSize: 20, color: Colors.grey,fontWeight: FontWeight.w800),
                       ),
                     ),
                     Stack(

@@ -39,7 +39,7 @@ class _NavScreenState extends State<NavScreen> {
           topRight: Radius.circular(25),
         ),
         child: Container(
-          height: 90,
+          height: 100,
           child: BottomNavigationBar(
             iconSize: 35,
             
