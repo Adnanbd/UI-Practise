@@ -21,7 +21,7 @@ class Page1 extends StatelessWidget {
             children: <Widget>[
               Page1Header1(),
               Container(
-                height: MediaQuery.of(context).size.height * 0.65,
+                height: MediaQuery.of(context).size.height * 0.8,
                 
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -32,7 +32,7 @@ class Page1 extends StatelessWidget {
                       padding: EdgeInsets.only(left: 30,top: 45,bottom: 15),
                     ),
                     Container(
-                      height: (MediaQuery.of(context).size.height * 0.5) * 0.765,
+                      height: (MediaQuery.of(context).size.height * 0.5) * 0.95,
                       child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           shrinkWrap: true,

@@ -22,11 +22,12 @@ class Page1ListItem extends StatelessWidget {
           ),
         ],
       ),
-      width: MediaQuery.of(context).size.width * 0.72,
+      width: MediaQuery.of(context).size.width * 0.8,
       child: Column(
+        //mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           Container(
-            height: ((MediaQuery.of(context).size.height * 0.5) * 0.8) * 0.38,
+            height: ((MediaQuery.of(context).size.height * 0.5) * 0.8) * 0.3,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(15),
@@ -37,13 +38,13 @@ class Page1ListItem extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.all(20),
-            height: ((MediaQuery.of(context).size.height * 0.5) * 0.8) * 0.5,
+            height: ((MediaQuery.of(context).size.height * 0.5) * 0.8) * 0.69,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Container(
-                  padding: EdgeInsets.only(bottom: 15),
+                  padding: EdgeInsets.only(bottom: 12),
                   alignment: Alignment.centerLeft,
                   child: Text(
                     subName + ' Basics',
@@ -60,17 +61,17 @@ class Page1ListItem extends StatelessWidget {
                   child: Text(
                     subName + ' And the',
                     style: TextStyle(
-                      fontSize: 28,
+                      fontSize: 25,
                       fontWeight: FontWeight.w800
                     ),
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 15),
+                  padding: EdgeInsets.only(bottom: 12),
                   child: Text(
                     'Scientefic Method',
                     style: TextStyle(
-                      fontSize: 28,
+                      fontSize: 25,
                       fontWeight: FontWeight.w800
                     ),
                   ),
@@ -79,37 +80,38 @@ class Page1ListItem extends StatelessWidget {
                 ],),
                 
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Container(
-                      child: Text(
-                        '4 of 8 Lessons',
-                        style: TextStyle(fontSize: 20, color: Colors.grey,fontWeight: FontWeight.w800),
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        child: Text(
+                          '4 of 8 Lessons',
+                          style: TextStyle(fontSize: 18, color: Colors.grey,fontWeight: FontWeight.w800),
+                        ),
                       ),
-                    ),
-                    Stack(
-                      children: <Widget>[
-                        Container(
-                          height: 10,
-                          width: 50,
-                          decoration: BoxDecoration(
-                              color: Colors.grey[200],
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(20))),
-                        ),
-                        Container(
-                          height: 10,
-                          width: 25,
-                          decoration: BoxDecoration(
-                              color: Colors.tealAccent[700],
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(20))),
-                        ),
+                      Stack(
+                        children: <Widget>[
+                          Container(
+                            height: 10,
+                            width: 50,
+                            decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                          ),
+                          Container(
+                            height: 10,
+                            width: 25,
+                            decoration: BoxDecoration(
+                                color: Colors.tealAccent[700],
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                          ),
 
-                      ],
-                    ),
-                  ],
-                ),
+                        ],
+                      ),
+                    ],
+                  ),
+                
               ],
             ),
           ),

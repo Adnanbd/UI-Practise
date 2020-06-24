@@ -4,7 +4,7 @@ class Page1Header1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-              height: MediaQuery.of(context).size.height * 0.4,
+              height: MediaQuery.of(context).size.height * 0.5,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
@@ -14,6 +14,7 @@ class Page1Header1 extends StatelessWidget {
                       style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,color: Colors.grey[900]),
                     ),
                     padding: EdgeInsets.all(10),
+                    
                   ),
                   Container(
                     
@@ -31,7 +32,7 @@ class Page1Header1 extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(bottom: 25,left: 30,right: 30,top: 55),
+                    margin: EdgeInsets.only(bottom: 0,left: 30,right: 30,top: 55),
                     
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(15)),
