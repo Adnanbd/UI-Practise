@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_practice/screens/page1.dart';
 import 'package:ui_practice/screens/page2.dart';
+import 'package:ui_practice/screens/page3.dart';
 import 'package:ui_practice/widget/nav.dart';
 
 class NavScreen extends StatefulWidget {
@@ -14,7 +15,7 @@ class _NavScreenState extends State<NavScreen> {
   final pages = [
     Page1(),
     Page2(),
-    Page2(),
+    Page3(),
   ];
 
   Widget get myBottomNavigationBar {
@@ -44,6 +45,7 @@ class _NavScreenState extends State<NavScreen> {
             iconSize: 35,
             
               onTap: (value) {
+                print(value);
                 setState(() {
                   _index = value;
                 });

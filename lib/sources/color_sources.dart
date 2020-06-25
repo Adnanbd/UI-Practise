@@ -5,6 +5,8 @@ class Sources extends ChangeNotifier{
 
   static Color selectedColor = Colors.red;
 
+  int index3 = 0;
+
   setColor(Color c)
   {
     selectedColor = c;
@@ -13,6 +15,16 @@ class Sources extends ChangeNotifier{
   }
   Color getColor(){
     return selectedColor;
+  }
+
+  setIndex(int c)
+  {
+    index3 = c;
+    notifyListeners();
+
+  }
+  int getIndex(){
+    return index3;
   }
 
   static List<Color> colorPool = [
