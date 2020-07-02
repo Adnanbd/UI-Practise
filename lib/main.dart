@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:ui_practice/screens/Movie_App/movie_home.dart';
 import 'package:ui_practice/screens/nav_screen.dart';
 import 'package:ui_practice/screens/page1.dart';
 import 'package:ui_practice/sources/color_sources.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
        
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: NavScreen(),
+        home: MovieHome(),
         
       ),
     );
